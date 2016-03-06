@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dreamcode.stucklove"
+    android:versionCode="22"
+    android:versionName="2.4 Dreamcode Develoeper ©September2015" 
+    android:installLocation="auto">
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="22" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/twicename" 
+        android:hardwareAccelerated="true">
+        <activity
+            android:name="com.dreamcode.stucklove.SplashActivity"
+            android:label="@string/twicename"
+            android:icon="@drawable/stucklovefinal" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.dreamcode.stucklove.MainActivity"
+            android:label="@string/app_name"
+            android:icon="@drawable/stucklovefix" >
+            <intent-filter>
+                <action android:name="com.dreamcode.CLEARSCREEN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".StuckLoveOld"
+                  android:label="@string/iNeedYou"
+                  android:icon="@drawable/ikonineedbiasa">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
